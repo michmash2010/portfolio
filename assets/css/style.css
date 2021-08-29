@@ -17,7 +17,8 @@ body {
 }
 
 /* begin header styles */
-header {
+header,
+footer {
     color: var(--color3);
     padding: 20px 35px;
     background-color: var(--color3);
@@ -40,16 +41,19 @@ header h1 {
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
 }
 
-header a {
+header a,
+footer a {
     text-decoration: none;
     color: var(--color1);
 }
 
-header nav {
+header nav,
+footer nav {
     margin: 7px 0;
 }
 
-header nav ul {
+header nav ul,
+footer nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -57,7 +61,60 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul li {
+header nav ul li,
+footer nav ul li {
+    padding: 2px 15px;
+    border-bottom: 0.25vw solid var(--color1);
+    margin: 15px;
+
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: none;
+}
+/* end header styles */
+
+/* begin footer style 
+footer {
+    color: var(--color3);
+    padding: 20px 35px;
+    background-color: var(--color3);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url("../images/palm.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    z-index: 9999;
+}
+footer h1 {
+    padding: 10px 0 0;
+    margin: 15px;
+
+    font-weight: bold;
+    font-size: 36 px;
+    color: var(--color1);
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--color1);
+}
+
+footer nav {
+    margin: 7px 0;
+}
+
+footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+footer nav ul li {
     
     padding: 2px 15px;
     border-bottom: 0.25vw solid var(--color1);
@@ -66,13 +123,9 @@ header nav ul li {
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: none;
-    
-   
+end footer style */
     
 
 }
 
-.right-margin {
-    float: right;
-    color: blue;
-}
+
