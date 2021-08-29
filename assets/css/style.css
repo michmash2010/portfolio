@@ -1,3 +1,78 @@
-h1 {
-    color: red;
+:root {
+    --color1: #ffffff;
+    --color2: #3d4e0a;
+    --color3: #a9cd2d;
+    --color4: #e7ebf2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color4);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* begin header styles */
+header {
+    color: var(--color3);
+    padding: 20px 35px;
+    background-color: var(--color3);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url("../images/palm.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    z-index: 9999;
+}
+header h1 {
+    padding: 10px 0 0;
+    margin: 15px;
+
+    font-weight: bold;
+    font-size: 36 px;
+    color: var(--color1);
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--color1);
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    
+    padding: 2px 15px;
+    border-bottom: 0.25vw solid var(--color1);
+    margin: 15px;
+
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: none;
+    
+   
+    
+
+}
+
+.right-margin {
+    float: right;
+    color: blue;
 }
