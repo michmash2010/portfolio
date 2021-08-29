@@ -12,13 +12,13 @@
 }
 
 body {
-    color: var(--color4);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    color: var(--color2);
+    background-color: var(--color4);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* begin header styles */
-header,
-footer {
+header {
     color: var(--color3);
     padding: 20px 35px;
     background-color: var(--color3);
@@ -41,19 +41,16 @@ header h1 {
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
 }
 
-header a,
-footer a {
+header a {
     text-decoration: none;
     color: var(--color1);
 }
 
-header nav,
-footer nav {
+header nav {
     margin: 7px 0;
 }
 
-header nav ul,
-footer nav ul {
+header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -61,8 +58,7 @@ footer nav ul {
     list-style: none;
 }
 
-header nav ul li,
-footer nav ul li {
+header nav ul li {
     padding: 2px 15px;
     border-bottom: 0.25vw solid var(--color1);
     margin: 15px;
@@ -73,59 +69,59 @@ footer nav ul li {
 }
 /* end header styles */
 
-/* begin footer style 
-footer {
-    color: var(--color3);
+/* begin body styles */
+section {
     padding: 20px 35px;
-    background-color: var(--color3);
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-image: url("../images/palm.jpg");
-    background-size: cover;
-    background-position: 80%;
-    background-attachment: fixed;
-    z-index: 9999;
+    justify-content: first baseline;
+    width: 100%;
+    border: 2px solid red;
 }
-footer h1 {
-    padding: 10px 0 0;
+
+section h2 {
+    width: 15%;
+    padding: 35px 5px 0;
+    border-right: 3px solid var(--color2); 
     margin: 15px;
-
+    text-align: right;
     font-weight: bold;
-    font-size: 36 px;
-    color: var(--color1);
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+
+    color: var(--color2);
+ 
+    min-height: 150px;
+    
 }
 
-footer a {
+section div {
+    width: 85%;
+    padding: 35px 0 0;
+    margin: 15px;
+    min-height: 150px;
+    border: 2px solid red;
+}
+
+/* begin contact-me styles */
+
+#contact-me div {
+    justify-content: center;
+}
+#contact-me a {
     text-decoration: none;
-    color: var(--color1);
+    color: var(--color2);
 }
 
-footer nav {
-    margin: 7px 0;
-}
-
-footer nav ul {
+#contact-me ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
     list-style: none;
 }
 
-footer nav ul li {
-    
-    padding: 2px 15px;
-    border-bottom: 0.25vw solid var(--color1);
-    margin: 15px;
-
+#contact-me div ul li {
+    padding: 0 15px;
+    border-bottom: 0.25vw solid var(--color2);
+    margin: 5px 15px 0;
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: none;
-end footer style */
-    
-
 }
-
-
