@@ -1,7 +1,7 @@
 :root {
     --color1: #ffffff;
     --color2: #3d4e0a;
-    --color3: #a9cd2d;
+    --color3: #c0e250;
     --color4: #e7ebf2;
 }
 
@@ -20,30 +20,28 @@ body {
 /* begin header styles */
 header {
     color: var(--color3);
-    padding: 20px 35px;
-    background-color: var(--color3);
+    padding: 0 35px 0 0;
+    background-color: var(--color2);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-image: url("../images/palm.jpg");
-    background-size: cover;
-    background-position: 80%;
-    background-attachment: fixed;
-    z-index: 9999;
 }
-header h1 {
-    padding: 10px 0 0;
-    margin: 15px;
 
+header h1 {
+    margin: 10px 15px 10px 0;
+    background-color: var(--color3);
     font-weight: bold;
-    font-size: 36 px;
-    color: var(--color1);
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
-}
+    font-size: 50px;
+ }
 
 header a {
     text-decoration: none;
-    color: var(--color1);
+    color: var(--color3);
+}
+
+header h1 a {
+    padding: 0 35px 0 100px;
+    color: var(--color2);
 }
 
 header nav {
@@ -51,6 +49,7 @@ header nav {
 }
 
 header nav ul {
+    margin-right: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -60,22 +59,49 @@ header nav ul {
 
 header nav ul li {
     padding: 2px 15px;
-    border-bottom: 0.25vw solid var(--color1);
-    margin: 15px;
-
+    border-bottom: 0.25vw solid var(--color3);
+    margin: 10px 15px;
+    
     font-weight: lighter;
     font-size: 1.55vw;
     text-shadow: none;
+}
+
+#portrait {
+    border-radius: 50%;
+}
+
+#subtitle {
+    height: 250px;
+    padding: 15px;
+    
+    background-image: url("../images/palm.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-between;
+    color: var(--color2);  
+    /* border: 2px solid red; */
+}
+
+#subtitle h5 {
+    padding: 15px;
+    margin: 0 95px 5px 0;
+    background-color: var(--color3);
+    font-size: 2vw;
+    font-weight: bold;
 }
 /* end header styles */
 
 /* begin body section styles */
 section {
-    padding: 20px 35px;
+    padding: 5px 35px 0 35px;
     display: flex;
-    justify-content: first baseline;
+    justify-content: baseline;
     width: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 section h2 {
@@ -98,7 +124,7 @@ section div {
     padding: 35px 0 0;
     margin: 1%;
     min-height: 150px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 /* begin contact-me styles */
@@ -139,7 +165,8 @@ section div {
     padding-top: 0;
 }
 
-#work div div {
+.big-card,
+.small-card {
     border: 7px solid var(--color3);
 
 }
@@ -158,3 +185,18 @@ section div {
     width: 48%;
 }
 
+#work span {
+    margin-top: auto;
+    margin-bottom: 15px;
+    width: 150px;
+    background-color: var(--color3);
+    color: var(--color2);
+    padding: 10px 5px;
+    text-align: left;
+}
+
+h3 {
+    margin-bottom: 2px;
+}
+
+/* end flex-box card section */
