@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -31,11 +32,10 @@ header h1 {
     margin: 10px 15px 10px 0;
     background-color: var(--color3);
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3rem;
  }
 
 header a {
-    text-decoration: none;
     color: var(--color3);
 }
 
@@ -63,12 +63,12 @@ header nav ul li {
     margin: 10px 15px;
     
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 2rem;
     text-shadow: none;
 }
 
 #portrait {
-    border-radius: 50%;
+    padding-left: 85px;
 }
 
 #subtitle {
@@ -112,48 +112,19 @@ section h2 {
     margin: 15px;
     text-align: right;
     font-weight: bold;
-
+    font-size: 1.45rem;
     color: var(--color2);
- 
     min-height: 150px;
-    
 }
 
 section div {
     width: 93%;
-    padding: 35px 0 0;
+    padding: 15px 0 0;
     margin: 1%;
     min-height: 150px;
     /* border: 2px solid red; */
 }
 
-/* begin contact-me styles */
-
-#contact-me div {
-    justify-content: center;
-}
-#contact-me a {
-    text-decoration: none;
-    color: var(--color2);
-}
-
-#contact-me ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    list-style: none;
-}
-
-#contact-me div ul li {
-    padding: 0 15px;
-    border-bottom: 0.25vw solid var(--color2);
-    margin: 5px 15px 0;
-    font-weight: lighter;
-    font-size: 1.55vw;
-    text-shadow: none;
-}
-/* end contact-me  styles */
-/* end body section styles */
 
 /* begin flex-box card section */
 
@@ -161,32 +132,43 @@ section div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items:inherit;
-    padding-top: 0;
+    /* border: 2px solid red; */
+  
+}
+
+#work div a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 0;
+    /* border: 2px solid rgb(0, 47, 255); */
 }
 
 .big-card,
 .small-card {
     border: 7px solid var(--color3);
+    background-position: center;
+    background-size: cover;
+}
 
+.big-card:hover,
+.small-card:hover {
+    filter: brightness(110%);
 }
 
 .big-card {
     background-image: url("../images/palm.jpg");
-    background-position: center;
-    background-size: cover;
     width: 100%;
 }
 
+
 .small-card {
     background-image: url("../images/palm.jpg");
-    background-position: center;
-    background-size: cover;
     width: 48%;
 }
 
 #work span {
-    margin-top: auto;
+    margin-top: 45px;
     margin-bottom: 15px;
     width: 150px;
     background-color: var(--color3);
@@ -199,4 +181,37 @@ h3 {
     margin-bottom: 2px;
 }
 
+h3 a {
+    color: var(--color2);
+    z-index: 1;
+}
 /* end flex-box card section */
+
+
+/* begin contact-me styles */
+
+#contact-me div {
+    justify-content: center;
+    padding-top: 35px;
+}
+#contact-me a {
+    color: var(--color2);
+}
+
+#contact-me ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#contact-me div ul li {
+    padding: 0 15px;
+    border-bottom: 0.25vw solid var(--color2);
+    margin: 5px 15px 0;
+    font-weight: lighter;
+    font-size: 1.8rem;
+    text-shadow: none;
+}
+/* end contact-me  styles */
+/* end body section styles */
