@@ -5,10 +5,10 @@ for UCF Coding Bootcamp
 <https://michmash2010.github.io/portfolio/>
 
 ## Description
-This is an HTML and CSS Portfolio page that incorporates media-responsiveness for a variety of viewport widths using media queries. Additional links to upcoming projects will be added during the course of the bootcamp. 
+This HTML and CSS Portfolio page incorporates flex-boxes and media queries for media-responsive design across a variety of viewport widths. Additional links to upcoming projects will be added during the course of the bootcamp. 
 
 ## Portfolio Webpage Screenshot
-![A screenshot of the finished Portfolio webpage, zoomed-out to show full length and layout formatting](./assets/images/portfolio_website_screenshot.png)
+![A screenshot of the finished Portfolio webpage, zoomed-out to show full length and layout formatting](../assets/images/portfolio_website_screenshot.png)
 
 ## Credits
 A mock-up for the basic design/appearance of the page was included in the assignment.
