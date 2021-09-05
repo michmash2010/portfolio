@@ -1,8 +1,10 @@
 :root {
-    --color1: #ffffff;
-    --color2: #3d4e0a;
-    --color3: #c0e250;
-    --color4: #e7ebf2;
+    --color1: rgba(255, 255, 255, 80%);
+    --color2: #424237;
+    --color3: #9DCACF;
+    --color4: #D2D1C8;
+    --image-large: url("../images/denim-m.jpg");
+    
 }
 
 * {
@@ -32,7 +34,7 @@ header h1 {
     margin: 10px 15px 10px 0;
     background-color: var(--color3);
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 4rem;
  }
 
 header a {
@@ -50,6 +52,7 @@ header nav {
 
 header nav ul {
     margin-right: 60px;
+    padding-top: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -63,21 +66,23 @@ header nav ul li {
     margin: 10px 15px;
     
     font-weight: lighter;
-    font-size: 1.75rem;
+    font-size: 1.55rem;
     text-shadow: none;
 }
 
 #portrait {
     padding-left: 85px;
+    padding-right: 25px;
+    background-color: var(--color1);
+    border-radius: 5%;
 }
 
 #subtitle {
-    height: 250px;
+    height: 235px;
     padding: 15px;
-    background-image: url("../images/palm.jpg");
+    background-image: var(--image-large);
     background-size: cover;
     background-position: 80%;
-    background-attachment: fixed;
     display: flex;
     align-items: flex-end;
     justify-content:space-between;
@@ -105,8 +110,8 @@ section {
 
 section h2 {
     width: 7%;
-    min-width: 97px;
-    padding: 35px 5px 0;
+    min-width: 110px;
+    padding: 35px 5px 0 21px;
     border-right: 3px solid var(--color2); 
     margin: 15px;
     text-align: right;
@@ -156,13 +161,13 @@ section div {
 }
 
 .big-card {
-    background-image: url("../images/palm.jpg");
+    background-image: var(--image-large);
     width: 100%;
 }
 
 
 .small-card {
-    background-image: url("../images/palm.jpg");
+    background-image: var(--image-large);
     width: 48%;
 }
 
@@ -174,6 +179,10 @@ section div {
     color: var(--color2);
     padding: 10px 5px;
     text-align: left;
+}
+
+#work .big-card span {
+    margin-top: 200px;
 }
 
 h3 {
@@ -214,3 +223,167 @@ h3 a {
 }
 /* end contact-me  styles */
 /* end body section styles */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1300px) {
+    /* this will be applied on any screen smaller than 980px */
+   header h1 a {
+       padding: 0 35px;
+   }
+
+   header nav ul {
+       margin: 0;
+   }
+
+   header nav ul li {
+        font-size: 1.15rem;
+    }
+
+    #subtitle h5 {
+        margin: 0 35px 5px 0;
+    }
+
+}
+
+@media screen and (max-width: 1075px) {
+     /* this will be applied on any screen smaller than 980px */
+    
+    header {
+        padding: 0;
+        width: 100%;
+        background-color: var(--color2);
+        display: inline-block;
+        text-align: center;
+    }
+
+    header h1 {
+       margin-right: 0;
+    }
+
+    header h1 a {
+        width: 100%;
+        padding: 0;
+    }
+    
+    header nav ul {
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    #subtitle h5 {
+        margin: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+     /* this will be applied on any screen between 768px and 575px */
+    header h1 {
+        font-size: 2.75rem;
+    }
+
+    #portrait {
+        padding: 0;
+    }
+
+    #subtitle h5 {
+        font-size: 1rem;
+    }
+
+    #portrait {
+        border-radius: 5% 5% 0 5%;
+    }
+
+    #contact-me ul {
+        flex-direction: column;
+    }
+
+    #contact-me div ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+      /* this will be applied on any screen smaller than 575px */
+    
+    header nav {
+          margin: 0;
+    }
+    
+    header nav ul {
+        padding-top: 0;
+        flex-wrap: nowrap;
+    }
+
+    header nav ul li {
+        padding: 0;
+        margin: 5px;
+    }
+
+    #subtitle {
+        display: block;
+        width: 100%;
+        padding: 5px 0 0 0;
+    }
+
+    #portrait {
+        margin: 10px 10px 0 10px;
+        border-radius: 5% 5% 0 0;
+    }
+
+    #subtitle h5 {
+        padding: 10px 10px 10px 25px;
+    }
+
+    section {
+        display: block;
+        padding: 5px 20px 0 20px;
+    }
+
+    section div {
+        padding: 0;
+        width: 98%;
+    }
+
+    section h2 {
+        width: 100%;
+        margin: 0 15px 0 0;
+        padding: 1%;
+        float: left;
+        border-right: 0;
+        border-bottom: 3px solid var(--color2);
+        min-height: 25px;
+        text-align: left;
+    }
+
+    p {
+        margin-top: 55px;
+    }
+
+    #work .big-card span {
+        margin-top: 100px;
+    }
+
+    .small-card {
+        width: 100%
+    }
+
+    #work div a {
+        margin: 15px 0 0 0;
+    }
+
+    #work span {
+        margin-top: 15px;
+    }
+
+    #contact-me a {
+        font-size: 1rem;
+    }
+  }
+  
