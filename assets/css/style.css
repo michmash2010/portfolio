@@ -157,11 +157,12 @@ section div {
 
 .big-card:hover,
 .small-card:hover {
-    filter: brightness(110%);
+    filter: brightness(120%);
 }
 
 .big-card {
-    background-image: var(--image-large);
+    background-image: url("../images/horiseon_website_blue.png");
+    background-position: top;
     width: 100%;
 }
 
@@ -200,8 +201,9 @@ h3 a {
 
 #contact-me div {
     justify-content: center;
-    padding-top: 35px;
+    align-content:flex-start;
 }
+
 #contact-me a {
     color: var(--color2);
 }
@@ -382,6 +384,10 @@ h3 a {
         margin-top: 15px;
     }
 
+    #contact-me div {
+        padding-top: 45px;
+    }
+    
     #contact-me a {
         font-size: 1rem;
     }
