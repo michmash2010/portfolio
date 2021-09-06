@@ -3,7 +3,6 @@
     --color2: #424237;
     --color3: #9DCACF;
     --color4: #D2D1C8;
-    --image-large: url("../images/denim-m.PNG");
     
 }
 
@@ -80,13 +79,14 @@ header nav ul li {
 #subtitle {
     height: 235px;
     padding: 15px;
-    background-image: var(--image-large);
+    background-image: url("../images/denim-m.PNG");
     background-size: cover;
     background-position: 80%;
     display: flex;
     align-items: flex-end;
     justify-content:space-between;
     color: var(--color2);  
+    z-index: 9999;
 }
 
 #subtitle h5 {
@@ -165,7 +165,7 @@ section div {
 
 
 .small-card {
-    background-image: var(--image-large);
+    background-image: url("../images/denim-m.PNG");
     width: 48%;
 }
 
