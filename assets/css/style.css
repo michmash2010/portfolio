@@ -169,6 +169,10 @@ section div {
     width: 48%;
 }
 
+#top-score {
+    background-image: url("../images/top_score_website.PNG");
+}
+
 #work span {
     margin-top: 45px;
     margin-bottom: 15px;
